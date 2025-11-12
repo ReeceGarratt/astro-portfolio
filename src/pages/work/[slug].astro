@@ -67,7 +67,7 @@ const { title, description, client, role, year, tags, coverImage } = entry.data;
   <!-- Content Section -->
   <section class="container-custom pb-20">
     <FadeIn client:load delay={0.3}>
-      <div class="prose prose-lg max-w-3xl mx-auto">
+      <div class="prose prose-lg max-w-4xl mx-auto">
         <Content />
       </div>
     </FadeIn>
@@ -95,12 +95,16 @@ const { title, description, client, role, year, tags, coverImage } = entry.data;
     @apply text-gray-t;
   }
   
+  .prose h1 {
+    @apply text-center text-4xl font-bold mt-12 mb-4 text-gray-t;
+  }
+
   .prose h2 {
-    @apply text-3xl font-bold mt-12 mb-4 text-gray-t;
+    @apply text-center text-3xl font-bold mt-12 mb-4 text-gray-t;
   }
   
   .prose h3 {
-    @apply text-2xl font-bold mt-8 mb-3 text-gray-t;
+    @apply text-center text-2xl font-bold mt-8 mb-3 text-gray-t;
   }
   
   .prose p {
