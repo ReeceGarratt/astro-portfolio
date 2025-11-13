@@ -18,7 +18,7 @@ export default function WorkCard({ title, description, client, tags, coverImage,
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="aspect-16/10 overflow-hidden bg-gray-100 shrink-0">
+      <div className="aspect-[16/10] overflow-hidden bg-gray-100 shrink-0">
         <img
           src={coverImage}
           alt={title}
