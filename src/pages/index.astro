@@ -49,7 +49,7 @@ const featuredWork = allWork.filter(work => work.data.featured).sort((a, b) => a
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {featuredWork.map((work, index) => (
-          <div class={`fade-in fade-in-up fade-in-delay-${(index+1)*100}`}>
+          <div class="fade-in fade-in-up" style={`animation-delay: ${(index+1)*0.1}s;`}>
             <WorkCard
               client:load
               title={work.data.title}
